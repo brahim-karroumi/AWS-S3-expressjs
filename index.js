@@ -41,7 +41,7 @@ dbConnection();
 
 
 app.get("/", (req, res) => {
-    res.json({ message: "you can  test the api on /posts" })
+    res.json({ message: "you can test the api on /posts just to add a post method (title , content , image)" })
 })
 app.post("/posts", upload.single('image'), async (req, res) => {
     try {
