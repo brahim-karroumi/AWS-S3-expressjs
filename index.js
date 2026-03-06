@@ -38,6 +38,11 @@ const s3 = new S3Client({
 const app = express();
 app.use(express.json());
 dbConnection();
+
+
+app.get("/", (req, res) => {
+    res.json({ message: "you can  test the api on /posts" })
+})
 app.post("/posts", upload.single('image'), async (req, res) => {
     try {
 
@@ -64,7 +69,7 @@ app.post("/posts", upload.single('image'), async (req, res) => {
             image: url
         });
 
-        res.status(200).json({ message: 'Post created successfully' , post });
+        res.status(200).json({ message: 'Post created successfully', post });
     } catch (error) {
         console.log(error)
         res.status(500).json({ message: 'Internal server error' });
