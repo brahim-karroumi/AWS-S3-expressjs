@@ -132,8 +132,8 @@ By default, only the bucket owner can access it. You need to create a dedicated 
 4. Copy the generated **Access key** and **Secret access key** into your `.env`:
 
 ```env
-ACCESS_KEY=YOUR_AWS_ACCESS_KEY_ID
-SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
+ACCESS_KEY=AKIA6KXE***GZLC3UIMS
+SECRET_ACCESS_KEY=HvW6U*****SuxkO0DXkToKZsO+EMT/pY8wX
 ```
 
 ---
