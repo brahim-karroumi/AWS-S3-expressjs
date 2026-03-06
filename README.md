@@ -313,7 +313,4 @@ app.post("/posts", upload.single("image"), async (req, res) => {
 });
 ```
 # aws-s3-expressjs
-# aws-s3-expressjs
-# aws-s3-expressjs
-# aws-s3-expressjs
-# aws-s3-expressjs
+
